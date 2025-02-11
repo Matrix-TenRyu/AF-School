@@ -1,0 +1,139 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width: 3%;
+    height: auto;
+}
+
+/* Header */
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin: 20px 0;
+    font-size: 2.5em;
+}
+
+/* Article styles */
+article {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+/* Paragraph styles */
+article p {
+    margin: 20px 0;
+}
+
+strong {
+    color: #e74c3c;
+}
+
+p.CH {
+    font-size: 1.1em;
+}
+
+p.CSD, p.CE {
+    font-size: 1.05em;
+}
+
+.tab1, .tab2{
+    display: inline-block;
+    margin-left: 40px;
+}
+/* Lists */
+article ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Emphasizing key elements */
+article li strong {
+    color: #2980b9;
+}
+
+/* Responsivety */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    article {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+}
+
+/* Dark mode part */
+.dark-mode{
+    background-color: black;
+    color: whitesmoke;
+    transition: background-color 0.54s ease, color 0.5s ease;
+}
+
+.dark-mode h1{
+    color: #C3D6EC;
+}
+
+.dark-mode article{
+    background-color: gray;
+}
+.dark-mode strong{
+    color: #DC98FF;
+}
+
+.dark-mode button:hover{
+    box-shadow: inset 5px 5px 5px  blue;
+}
+
+.dark-mode div{
+    background-color: gray;
+    color: white;
+}
+.dark-mode div pre code{
+    background-color: white;
+    color: black;
+}
+
+/* Button part */
+button{
+    margin: 15px;
+    border-radius: 10px;
+}
+
+button:hover{
+    box-shadow: inset 5px 5px 5px  red;
+}
+
+/* code div */
+
+div{
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+div code{
+    display: block;
+    padding: 1em;
+    background-color: #E5D2C4;
+    border-radius: 10px;
+    overflow: auto;
+}
