@@ -76,7 +76,17 @@ article li strong {
     h1 {
         font-size: 2em;
     }
+
+    button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    img {
+        width: 10%; /* Increase image size for small screens */
+    }
 }
+
 
 /* Dark mode part */
 .dark-mode{
@@ -96,8 +106,8 @@ article li strong {
     color: #DC98FF;
 }
 
-.dark-mode button:hover{
-    box-shadow: inset 5px 5px 5px  blue;
+.dark-mode button:hover {
+    box-shadow: inset 5px 5px 5px #2980b9;
 }
 
 .dark-mode div{
@@ -108,16 +118,10 @@ article li strong {
     background-color: white;
     color: black;
 }
-
-/* Button part */
-button{
-    margin: 15px;
-    border-radius: 10px;
+.dark-mode div code:hover {
+    background-color: #3c3c3c;  /* Darken the background on hover */
 }
 
-button:hover{
-    box-shadow: inset 5px 5px 5px  red;
-}
 
 /* code div */
 
@@ -130,10 +134,97 @@ div{
     border-radius: 10px;
 }
 
-div code{
+div code {
     display: block;
-    padding: 1em;
-    background-color: #E5D2C4;
+    padding: 1.5em;
+    background-color: #2e2e2e;
+    color: #dcdcdc;
     border-radius: 10px;
     overflow: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+/* Keyword colors */
+div code .keyword {
+    color: #e74c3c;  /* Red for keywords like `int`, `return`, etc. */
+}
+
+/* Function names */
+div code .function {
+    color: #f39c12;  /* Yellow for function names like `printf` */
+}
+
+/* Variable names */
+div code .variable {
+    color: #3498db;  /* Blue for variable names */
+}
+
+/* String literals */
+div code .string {
+    color: #2ecc71;  /* Green for strings */
+}
+
+/* Comment styling */
+div code .comment {
+    color: #7f8c8d;  /* Grey for comments */
+    font-style: italic;
+}
+
+/* Number literals */
+div code .number {
+    color: #9b59b6;  /* Purple for numbers */
+}
+
+/* Operators */
+div code .operator {
+    color: #bdc3c7;  /* Light gray for operators */
+}
+
+/* Add hover effect to code */
+div code:hover {
+    background-color: #3c3c3c;  /* Darken the background on hover */
+}
+
+/* Specific to C code styling */
+div code .line {
+    display: block;
+}
+
+/*Previous and Next button*/
+
+.next-privious {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+/* .previous {
+    background-color: #f1f1f1;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+} */
+
+.next {
+    background-color: #f1f1f1;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    
+
 }
